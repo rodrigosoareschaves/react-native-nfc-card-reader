@@ -60,8 +60,19 @@ public class NfcCardReaderModule extends ReactContextBaseJavaModule implements A
        }
       
     }
-
-  public void onNewIntent(Intent intent) {
+    @ReactMethod
+    public void backButtonCallback(Callback event) {
+        System.out.println("BackButton Pressed MODULE");
+        WritableMap NfcCardDetails = Arguments.createMap();
+        NfcCardDetails.putString("backbutton", "true");
+        NfcCardDetails.putString("cardNumber", "");
+        NfcCardDetails.putString("expiryDate", "");
+        NfcCardDetails.putString("cardType", "");
+        NfcCardDetails.putString("firstName", "");
+        NfcCardDetails.putString("lastName", "");
+        mNfcCallback.invoke(NfcCardDetails);
+    }
+    public void onNewIntent(Intent intent) {
    
     }
-  }
+}
