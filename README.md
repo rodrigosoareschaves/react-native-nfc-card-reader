@@ -1,7 +1,7 @@
 # react-native-nfc-card-reader
 
 ## Fork 
-This is a fork of jackbayliss/react-native-nfc-card-reader repo with the CardNfcUtils integrated to the repo to avoid issues in Android 8.
+This is a fork of jackbayliss/react-native-nfc-card-reader repo with the CardNfcUtils integrated to the repo to avoid issues in Android 12.
 The issue in case was something related to Target S+ compatibilities that was happening on class: com.pro100svitlo.creditCardNfcReader.utils.CardNfcUtils
 
 ## Description 
