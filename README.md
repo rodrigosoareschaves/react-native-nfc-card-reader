@@ -1,5 +1,9 @@
 # react-native-nfc-card-reader
 
+## Fork 
+This is a fork of jackbayliss/react-native-nfc-card-reader repo with the CardNfcUtils integrated to the repo to avoid issues in Android 8.
+The issue in case was something related to Target S+ compatibilities that was happening on class: com.pro100svitlo.creditCardNfcReader.utils.CardNfcUtils
+
 ## Description 
 This package is specifically designed to scan credit/debit cards using an Android devices NFC reader and return the card number, expiry and card type.
 
